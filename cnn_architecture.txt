@@ -1,0 +1,107 @@
+1 What is a Convolutional Neural Network (CNN), and why is it used for image processing?
+ans 
+A Convolutional Neural Network is also a Neural Network in deeplearning that 
+apply on various task releted images like image processing , classification ,
+ object-detection etc.
+cnn used for only image data because to finding complexity of an image convolution 
+operation is needed and for auto matation also Neural network needed so 
+cnn is only used on image processing. 
+
+
+2 What are the key components of a CNN architecture?
+ans
+components of cnn is 
+    i - Convolution layer
+    ii - pooling layer 
+    iii - flatten layer
+    iv - fully conected nural network layer 
+
+3 What is the role of the convolutional layer in CNNs?
+ans
+convolution layer performs convolution operation in that a filter(kernel size (n X n))
+moves on image(input data) according to stride(no of step jump) is given , and generate
+feature map of given image data.
+and by backpropagation we can update the value of kernel(initaly random weight's)
+
+4 What is a filter (kernel) in CNNs ?
+ans
+filter is a n by n matrix that have some random weight.It find out  the 
+complex structure that can be inside the image just by dot product over the input 
+image data.And as out put it generate the feature map.
+
+
+5 What is pooling in CNNs, and why is it important?
+ans
+pooling is a operation in cnn that apply on generated feature map that pooling 
+layer pool the weight from higher dimentiion to lower dimention.
+pooling is important because every feature map may contain important value 
+and by pooling it can added into new feature map.
+
+6 What are the common types of pooling used in CNNs ?
+ans 
+    i - MaxPooling
+    ii - AvgPooling
+    iii - GlobalMaxPooling
+7 How does the backpropagation algorithm work in CNNs?
+ans 
+In backpropagation the weight and bias are update .But in CNN also the kernel 
+weight are update.
+
+
+8 What is the role of activation functions in CNNs?
+ans
+Activation functions that apply on the output of layer and it gives the nonlinearity 
+to the functions.
+
+9 What is the concept of receptive fields in CNNs ?
+ans
+The receptive field is defined by the filter size of a layer within a convolution layer
+.The receptive field is also an indication of the extend of the scope of input data
+a nuron unit within a layer can be exposed to.
+
+10 Explain the concept of tensor space in CNN ?
+ans
+tensor are the multidimentional array structure that store numerical value.
+Basicaly an image consist of n layer (generaly 3 layers rgb).
+each layer or feature contain the pixel value of that format.
+
+11 What is LeNet-5, and how does it contribute to the development of CNNs ?
+ans
+LeNet-5 is a Convolutional Nural Network architecture that contain 7 layer .
+It is used for handwritten character recognization .
+
+12 What is AlexNet, and why was it a breakthrough in deep learning ?
+ans
+AlexNet also a Convolutional Nural Network architecture that contain 8 layers.
+AlexNet used for predicting classification problem.(whether it is a cat or dog , pencil)
+it has 1000 classes.
+
+
+13 What is VGGNet, and how does it differ from AlexNet?
+ans
+VGGNet also a Convolutional Nural Network architecture.
+VGGNet used for transfor learning .
+
+
+
+14 What is GoogLeNet, and what is its main innovation?
+ans
+GoogLeNet also a Convolutional Nural Network architecture that contain 22 deep layers.
+it also have 1000 classes.
+GoogLeNet is used for image classification , detection .
+15 What is ResNet, and what problem does it solve?
+ans
+ResNet is a CNN architecture .
+it quickly train ,very deep nural network models and by linking across layers
+ can prevent the gradient dissapprence problem.
+
+
+17 What are the main steps involved in training a CNN from scratch?
+stpe are
+    1- collection of image 
+    2 - lableling the image 
+    3 - set the proper path of images
+    4 - define architecture of cnn
+    5 - chose the model that used (transfor learning)
+    6 - set compilation 
+    7 - if accuracy not hold then hyper tune it
